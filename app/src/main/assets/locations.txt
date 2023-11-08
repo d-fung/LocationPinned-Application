@@ -1,0 +1,50 @@
+CN Tower, 43.642566, -79.387056
+Royal Ontario Museum (ROM), 43.668292, -79.396004
+Ripley's Aquarium of Canada, 43.642403, -79.386226
+Toronto Islands, 43.623160, -79.376384
+Ontario Science Centre, 43.716463, -79.339329
+Canada's Wonderland, 43.840294, -79.540581
+Art Gallery of Ontario (AGO), 43.653606, -79.392310
+High Park, 43.646547, -79.463059
+Scarborough Bluffs, 43.707569, -79.239236
+Distillery District, 43.650735, -79.359054
+Royal Woodbine Golf Club, 43.685051, -79.583140
+Toronto Zoo, 43.818740, -79.182991
+Ontario Place, 43.625192, -79.409437
+Casa Loma, 43.678001, -79.409219
+Royal Botanical Gardens, 43.276247, -79.905287
+Humber Bay Park, 43.622228, -79.473363
+Fort York, 43.638010, -79.401790
+Queen Street West, 43.646394, -79.416682
+Nathan Phillips Square, 43.652810, -79.383702
+Kensington Market, 43.655214, -79.402058
+St. Lawrence Market, 43.648693, -79.371657
+Yorkville, 43.671386, -79.390167
+Eaton Centre, 43.654192, -79.380914
+Rogers Centre, 43.641437, -79.389353
+Queen's Park, 43.663792, -79.393207
+Bloor Street West, 43.665266, -79.409148
+Little Italy, 43.655864, -79.407164
+University of Toronto, 43.662892, -79.395656
+Royal Conservatory of Music, 43.668751, -79.398118
+Allan Gardens, 43.659332, -79.375465
+The Beaches, 43.671429, -79.297639
+Trinity Bellwoods Park, 43.648428, -79.413747
+Edwards Gardens, 43.737549, -79.377455
+Queen Street East, 43.659010, -79.345218
+Royal Alexandra Theatre, 43.647419, -79.386915
+York University, 43.773372, -79.501211
+Hockey Hall of Fame, 43.646966, -79.377966
+Aga Khan Museum, 43.725178, -79.327678
+Ontario Legislative Building, 43.664616, -79.391781
+The Rec Room Toronto, 43.645237, -79.387792
+Ontario Place Cinesphere, 43.625062, -79.409277
+Toronto Music Garden, 43.638797, -79.392408
+Ontario Place Trillium Park, 43.628899, -79.409490
+Toronto Islands Hanlan's Point Beach, 43.619460, -79.404566
+Yonge-Dundas Square, 43.656131, -79.380782
+Graffiti Alley, 43.647128, -79.403961
+Allan Gardens Conservatory, 43.659352, -79.374873
+Evergreen Brick Works, 43.684235, -79.365343
+Harbourfrount Centre, 43.638834, -79.381878
+Ontario Science Centre Mini Farmers, 43.718063, -79.338543
