@@ -34,6 +34,8 @@ public class UpdateLocation extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_update_location);
         setSupportActionBar(findViewById(R.id.toolbar2));
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
 
         // Set references to all views
         address_to_update_text_input = findViewById(R.id.address_to_update_text_input);
@@ -92,6 +94,7 @@ public class UpdateLocation extends AppCompatActivity {
                     return;
                 }
 
+                // Geocoder used to find the latitude and longitude for the address entered
                 Geocoder geocoder = new Geocoder(UpdateLocation.this);
                 if (!Geocoder.isPresent()) {
                     Toast.makeText(UpdateLocation.this, "Geocoder not available", Toast.LENGTH_SHORT).show();
@@ -116,9 +119,11 @@ public class UpdateLocation extends AppCompatActivity {
                     e.printStackTrace();
                 }
 
+                // get latitude and longitude to pass into the updateData function
                 String latitude_input = latitude_display.getText().toString();
-                String longitude_input = latitude_display.getText().toString();
+                String longitude_input = longitude_display.getText().toString();
 
+                // calls the updateData method
                 DatabaseHelper dbHelper = new DatabaseHelper(UpdateLocation.this);
                 dbHelper.updateData(address_to_update,
                         name_input,

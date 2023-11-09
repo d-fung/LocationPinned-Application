@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
     TextView latitude_display;
     TextView longitude_display;
 
-    private static final boolean POPULATE_DATABASE = false;
+    private static boolean POPULATE_DATABASE;
 
 
 
@@ -55,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         // Populate the database with text file if set to true
+        POPULATE_DATABASE = true;
         if (POPULATE_DATABASE) {
             try {
                 storeLocationDataFromFile();
@@ -137,6 +138,8 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "Please enter a valid address", Toast.LENGTH_SHORT).show();
                     return;
                 }
+
+                // Opens the UpdateLocation page and passes in the selected address to be updated
                 Intent intent = new Intent(MainActivity.this, UpdateLocation.class);
                 intent.putExtra("address_to_update", address_input);
                 startActivity(intent);

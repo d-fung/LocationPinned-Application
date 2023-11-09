@@ -48,6 +48,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
 
+    // returns a cursor with the matching address
     public Cursor searchLocation(String address){
         SQLiteDatabase db = this.getWritableDatabase();
         //ContentValues cv = new ContentValues();
@@ -58,6 +59,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return cursor;
     }
 
+    // adds new location to database
     public void addLocation(String name, String address, String latitude, String longitude){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues cv = new ContentValues();
@@ -69,13 +71,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         long result = db.insert(TABLE_NAME, null, cv);
 
         if (result == -1){
-            Toast.makeText(context, "Unable to save note", Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, "Unable to save location", Toast.LENGTH_SHORT).show();
         } else {
-            Toast.makeText(context, "Successfully saved note", Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, "Successfully saved location", Toast.LENGTH_SHORT).show();
         }
-
     }
 
+    // updates the entry in the database that matches the address_old input
     public void updateData(String address_old, String name, String address, String latitude, String longitude){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues cv = new ContentValues();
@@ -86,12 +88,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         long result = db.update(TABLE_NAME, cv, "address=?", new String[] {address_old});
         if (result == -1){
-            Toast.makeText(context, "Failed to update note", Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, "Failed to update location", Toast.LENGTH_SHORT).show();
         } else {
-            Toast.makeText(context, "Successfully updated note", Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, "Successfully updated location", Toast.LENGTH_SHORT).show();
         }
     }
 
+    // queries the database and deletes the entry with matching address
     public void deleteLocation(String address){
         SQLiteDatabase db = this.getWritableDatabase();
         long result = db.delete(TABLE_NAME, "address=?", new String[] {address});
